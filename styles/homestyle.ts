@@ -7,14 +7,15 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor : BackgroundApp
+    backgroundColor : BackgroundApp,
+    paddingHorizontal : 12
    },
    text : {
     color : textColor,
     fontSize : 14,
-    marginBottom : 4
+    marginBottom : 4,
+    fontFamily : 'iris-grover'
    },
    button : {
     backgroundColor : buttonColors,
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
    imageContainer : {
     width : 120,
     height : 120,
-    marginVertical : 12
+  
    },
    image : {
     width : "100%",
@@ -35,7 +36,6 @@ const styles = StyleSheet.create({
    },
    form : {
     width: "100%",
-    paddingHorizontal : 12,
     marginVertical : 4,
     marginTop : 20,
     gap : 8
@@ -56,7 +56,47 @@ const styles = StyleSheet.create({
     position : "absolute",
     top : 32,
     right : 20
+   },
+   loginButton : {
+    width : 180,
+    height: 30,
+    backgroundColor : "#FF2D55",
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop : 60
+   },
+   enterWithContainer : {
+    flexDirection : "row",
+    gap : 4,
+    alignItems : "center",
+    marginTop : 20
+   },
+   linesEnterWith : {
+    width: 36,
+    height: 7,
+    backgroundColor : textColor,
+   },
+   socialMediaLoginContainer : {
+    flexDirection : "row",
+    alignItems : "center",
+    gap: 6,
+    marginTop: 12
+   },
+   socialButton : {
+    height : 40,
+    width : 40,
+   },
+   socialImageButton : {
+    width : "100%",
+    height : "100%",
+    resizeMode : "cover"  
+   },
+   createAccountContainer : {
+    flexDirection : "row",
+    marginTop : 40,
    }
+
 
 })
 
