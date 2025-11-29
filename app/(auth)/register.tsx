@@ -1,5 +1,7 @@
 import { styles } from "@/styles/homestyle";
+import { Feather } from "@expo/vector-icons";
 import Entypo from '@expo/vector-icons/Entypo';
+import { useRouter } from "expo-router";
 import { useState } from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 
@@ -14,15 +16,26 @@ export default function TabOneScreen() {
   const [secure, setSecure] = useState<boolean>(true);
   const [ email, setEmail ] = useState<string>('');
   const [ password, setPassword ] = useState<string>('');
+  const router = useRouter()
 
 const onSubmit = () => {
   alert(`Email: ${email} \n Password: ${password}`);
+}
+
+const goBack = ()=> {
+    router.back();
 }
 
   return (
    <View
    style={styles.container}
    >
+
+    <View style={{width: "100%", alignItems : "flex-start", justifyContent: "flex-start", paddingTop: 16}}>
+      <TouchableOpacity>
+          <Feather onPress={goBack} name="arrow-left" size={24} color={"#fff"} />
+      </TouchableOpacity>
+    </View>
     <View
     style={[styles.imageContainer,{ marginBottom : 20}]}
     >
@@ -34,9 +47,14 @@ const onSubmit = () => {
     </View>
     <Text
     style={styles.text}
-    > Seja Bem vindo</Text>
+    > Faça seu Cadastro</Text>
 
 <View style={styles.form}>
+      <View style={styles.formItem}>
+    <Text style={styles.text}>Nome Completo</Text>
+    <TextInput onChangeText={(text)=>setEmail(text)} style={styles.input} placeholder="Digite seu email" />
+  </View>
+
   <View style={styles.formItem}>
     <Text style={styles.text}>Email</Text>
     <TextInput onChangeText={(text)=>setEmail(text)} style={styles.input} placeholder="Digite seu email" />
@@ -51,15 +69,6 @@ const onSubmit = () => {
   
     }
      </View>
-</View>
-<View style={{
-  width: '100%',
-  justifyContent: 'flex-end',
-  alignItems: 'flex-end',
-}}>
-  <Text
-  style={styles.text}
-  > Esqueceu a senha ? </Text>
 </View>
 
  <TouchableOpacity onPress={onSubmit} style={styles.loginButton}>

@@ -31,7 +31,8 @@ function RootLayoutNav() {
      <SafeAreaView style={{ flex: 1 }}>
       <StatusBar  style='light' backgroundColor='#000' />
        <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(home)" options={{ headerShown: false }} />
       </Stack>
      </SafeAreaView>
   );
