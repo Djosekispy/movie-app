@@ -8,10 +8,11 @@ export default function UserPage(){
      style={{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor : "#1F1D2B"
      }}
      >
-            <Text>User Page</Text>
+            <Text style={{color : "#FFF"}}>User Page</Text>
      </View>   
     );
 }

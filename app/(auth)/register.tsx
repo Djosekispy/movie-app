@@ -1,9 +1,9 @@
 import { styles } from "@/styles/homestyle";
-import { Feather } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import Entypo from '@expo/vector-icons/Entypo';
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 const loginImage = require("../../assets/images/Profile.png");
 const facebookImage = require("../../assets/images/Facebook.png");
@@ -27,13 +27,15 @@ const goBack = ()=> {
 }
 
   return (
-   <View
-   style={styles.container}
+   <ScrollView
+   showsVerticalScrollIndicator={false}
+   style={{flex : 1}}
    >
+    <View style={styles.container}>
 
     <View style={{width: "100%", alignItems : "flex-start", justifyContent: "flex-start", paddingTop: 16}}>
       <TouchableOpacity>
-          <Feather onPress={goBack} name="arrow-left" size={24} color={"#fff"} />
+          <Ionicons onPress={goBack} name="arrow-back" size={24} color={"#fff"} />
       </TouchableOpacity>
     </View>
     <View
@@ -93,10 +95,8 @@ const goBack = ()=> {
  </TouchableOpacity>
   </View>
 
-    <View style={styles.createAccountContainer}>
-      <Text style={styles.text}>Crie sua conta</Text>
     </View>
-   </View>
+   </ScrollView>
   );
 }
 

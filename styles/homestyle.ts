@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
  const textColor = "#FFF";
- const BackgroundApp = "#000000";
- const buttonColors = "#FF2D55";
+ const BackgroundApp = "#1F1D2B";
+ const buttonColors = "#12CDD9";
 
 const styles = StyleSheet.create({
   container: {

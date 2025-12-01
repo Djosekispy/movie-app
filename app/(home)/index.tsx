@@ -8,10 +8,11 @@ export default function HomePage(){
      style={{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor : "#1F1D2B"
      }}
      >
-            <Text>Home</Text>
+            <Text style={{color : "#fff"}}>Home</Text>
      </View>   
     );
 }
