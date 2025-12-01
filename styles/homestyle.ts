@@ -100,5 +100,5 @@ const styles = StyleSheet.create({
 
 })
 
-export { styles };
+export { BackgroundApp, buttonColors, styles, textColor };
 

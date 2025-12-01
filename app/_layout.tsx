@@ -1,3 +1,4 @@
+import { BackgroundApp } from '@/styles/homestyle';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -29,7 +30,7 @@ export default function RootLayout() {
 function RootLayoutNav() {
   return (
      <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar  style='light' backgroundColor='#000' />
+      <StatusBar  style='light' backgroundColor={BackgroundApp} />
        <Stack>
          <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="(home)" options={{ headerShown: false }} />
