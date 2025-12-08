@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         flexDirection : "row",
         justifyContent : "flex-start",
         alignItems: "center",
+        width : "100%",
         flexShrink : 1,
         paddingVertical: 12,
         paddingHorizontal: 20   
@@ -19,7 +20,8 @@ const styles = StyleSheet.create({
     Usercontainer :{
         flexDirection: "column",
         gap: 4,
-        paddingHorizontal: 14
+        paddingHorizontal: 14,
+        flexGrow: 1
     },
     name : {
         color: "#fff",

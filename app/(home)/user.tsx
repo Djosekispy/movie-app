@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Text, TouchableOpacity, View } from "react-native";
 
 
 export default function UserPage(){
@@ -12,7 +13,12 @@ export default function UserPage(){
         backgroundColor : "#1F1D2B"
      }}
      >
+            <Link href="/(auth)/register" asChild>
+            <TouchableOpacity>
             <Text style={{color : "#FFF"}}>User Page</Text>
+
+            </TouchableOpacity>
+            </Link>
      </View>   
     );
 }

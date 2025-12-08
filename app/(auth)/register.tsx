@@ -15,11 +15,12 @@ export default function TabOneScreen() {
 
   const [secure, setSecure] = useState<boolean>(true);
   const [ email, setEmail ] = useState<string>('');
+   const [ name, setName ] = useState<string>('');
   const [ password, setPassword ] = useState<string>('');
   const router = useRouter()
 
 const onSubmit = () => {
-  alert(`Email: ${email} \n Password: ${password}`);
+   router.push({pathname : "/(home)", params: { name: name, email : email }})
 }
 
 const goBack = ()=> {
@@ -54,7 +55,7 @@ const goBack = ()=> {
 <View style={styles.form}>
       <View style={styles.formItem}>
     <Text style={styles.text}>Nome Completo</Text>
-    <TextInput onChangeText={(text)=>setEmail(text)} style={styles.input} placeholder="Digite seu email" />
+    <TextInput onChangeText={(text)=>setName(text)} style={styles.input} placeholder="Digite seu nome" />
   </View>
 
   <View style={styles.formItem}>
