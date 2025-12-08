@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import Header from "@/components/header/Header";
+import { View } from "react-native";
 
 
 export default function HomePage(){
@@ -7,12 +8,11 @@ export default function HomePage(){
      <View
      style={{
         flex: 1,
-        justifyContent: "center",
         alignItems: "center",
         backgroundColor : "#1F1D2B"
      }}
      >
-            <Text style={{color : "#fff"}}>Home</Text>
+        <Header />
      </View>   
     );
 }
