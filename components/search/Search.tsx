@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 
 
@@ -17,7 +17,7 @@ export default function Search(){
             </TouchableOpacity>
             
               <TouchableOpacity style={style.FilterButton}>
- <Ionicons name="filter" size={25} color="#92929D"/>
+ <MaterialIcons name="tune" size={25} color="#92929D" />
             </TouchableOpacity>
             
         </View>
@@ -50,7 +50,10 @@ const style = StyleSheet.create({
     left: 12
   },
     FilterButton:{
+    borderLeftWidth : 1,
+    borderLeftColor: "#92929D",
     position: "absolute",
+    paddingLeft: 12,
     top: 12,
     right: 12
   }
