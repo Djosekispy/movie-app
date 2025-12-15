@@ -12,7 +12,7 @@ O objetivo é servir como uma ferramenta simples e intuitiva para estudantes exp
 ## APIs e Design / Recursos  
 
 ### APIs  
-- Utiliza a API gratuita: **Free Movie APIs** — https://www.freepublicapis.com/free-movie-apid  
+- Utiliza a API gratuita: **Free Movie APIs** — [https://www.freepublicapis.com/free-movie-apid  ](https://www.freepublicapis.com/free-movie-api)
 - Também compatível com a API do IMDb via o wrapper descrito em https://imdbapi.dev  e documentação adicional em https://imdb.iamidiotareyoutoo.com/docs/index.html#description/introduction  
 
 ### Design / UI Kits  
