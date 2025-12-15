@@ -1,4 +1,5 @@
 import Header from "@/components/header/Header";
+import Search from "@/components/search/Search";
 import { useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import { View } from "react-native";
@@ -14,17 +15,20 @@ export default function HomePage(){
      style={{
         flex: 1,
         alignItems: "center",
-        backgroundColor : "#1F1D2B"
+        backgroundColor : "#1F1D2B",
+         paddingHorizontal: 20 ,
+         paddingTop: 20  
      }}
      >
         <Header 
-        name={name}
+        name={name || "Desconhecido"}
         message="Seja bem Vindo. Desfrute de tudo de melhor!"
         favorite={favorite}
          setFavorite={setFavorite}
       avatar={avatar}
-        
         />
+
+        <Search /> 
      </View>   
     );
 }

@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         width : "100%",
         flexShrink : 1,
         paddingVertical: 12,
-        paddingHorizontal: 20   
+       
      },
     Imagecontainer : {
         width: 50,
