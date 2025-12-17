@@ -9,7 +9,7 @@ const wakanda = require("@/assets/images/wakanda.jpg")
 function MovieCarousel(){
 
     return (
-        <View>
+         <View style={{flex:1, width:"100%"}}>
             <FlatList
             horizontal
             data={MovieData}

@@ -1,3 +1,4 @@
+import ScrollCategories from "@/components/categories/scrollCategories";
 import Header from "@/components/header/Header";
 import MovieCarousel from "@/components/movieCarrousel/MoveCarrousel";
 import Search from "@/components/search/Search";
@@ -33,9 +34,10 @@ export default function HomePage(){
 
         <Search /> 
     </View>
-      <View style={{flex:1, width:"100%"}}>
+     
            <MovieCarousel />
-      </View>
+           <ScrollCategories />
+          
      </View>   
     );
 }
