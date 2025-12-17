@@ -1,4 +1,4 @@
-import { styles } from "@/styles/homestyle";
+import { BackgroundApp, styles } from "@/styles/homestyle";
 import Entypo from '@expo/vector-icons/Entypo';
 import { Link, useRouter } from "expo-router";
 import { useState } from "react";
@@ -23,7 +23,8 @@ const onSubmit = () => {
 
   return (
    <View
-   style={styles.container}
+   style={[styles.container,{
+    backgroundColor : BackgroundApp}]}
    >
     <View
     style={[styles.imageContainer,{ marginBottom : 20}]}
@@ -35,7 +36,7 @@ const onSubmit = () => {
       />
     </View>
     <Text
-    style={styles.text}
+    style={[styles.text,{fontSize : 18}]}
     > Seja Bem vindo</Text>
 
 <View style={styles.form}>
@@ -54,6 +55,7 @@ const onSubmit = () => {
     }
      </View>
 </View>
+
 <View style={{
   width: '100%',
   justifyContent: 'flex-end',

@@ -1,4 +1,4 @@
-import { styles } from "@/styles/homestyle";
+import { BackgroundApp, styles } from "@/styles/homestyle";
 import { Ionicons } from "@expo/vector-icons";
 import Entypo from '@expo/vector-icons/Entypo';
 import { useRouter } from "expo-router";
@@ -30,7 +30,8 @@ const goBack = ()=> {
   return (
    <ScrollView
    showsVerticalScrollIndicator={false}
-   style={{flex : 1}}
+   style={{flex : 1,
+    backgroundColor : BackgroundApp}}
    >
     <View style={styles.container}>
 

@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor : BackgroundApp,
+    justifyContent:"center",
     paddingHorizontal : 12
    },
    text : {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
    },
    formItem : {
     paddingHorizontal: 4,
-    marginBottom : 16,
+    marginBottom : 12,
     position : "relative",
    },
    input : {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     alignItems: "center",
     justifyContent: "center",
-    marginTop : 60
+    marginTop : 40
    },
    enterWithContainer : {
     flexDirection : "row",
